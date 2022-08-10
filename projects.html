@@ -4,60 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Portfolio!</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-          <div class="menu">
-            <h3 class="logo"><a href = "index.html">Aditya <span>Ramachandran</a></span></h3>
-            <div class="hamburger-menu">
-              <div class="bar"></div>
+    <div class="Navbar1">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">R Aditya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page"  href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Me!</a>
+                </li>
+                </ul>
             </div>
-          </div>
-      </div>
-  
-      <div class="main-container">
-          <div class="main">
-            <header>
-              <div class="overlay">
-                <div class="inner">
-                  <h2 class="title">Projects I have worked on</h2>
-                  <p>
-                    All projects that I have worked on are present in my github page. Please visit the Contact Me page to visit my github profile!
-                  </p>
-                  
-                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="main" style="margin:auto;width: 50%; padding: 50px;">
+        <h1 class ="h1">My Projects</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="align-self: center;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                    <img src="pictures/data.jpg" class="card-img-top" style="width: 100%; height: 50%; margin-top: 10;">
+                    <div class="card-body">
+                      <h5 class="card-title">Business Data Collection and Analysis</h5>
+                      <p class="card-text">Primary data collection, analysis and visualization!</p>
+                      <a href="https://www.canva.com/design/DAE9MRp7qhA/V5nDx-Y1rBT5n_U8LD3XDQ/view?utm_content=DAE9MRp7qhA&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent" class="btn btn-primary">Check out the project!</a>
+                    </div>
+                  </div>
               </div>
-            </header>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; margin-top: 10;">
+                    <img src="pictures/kanban.png" class="card-img-top" style="width: 100%; height: 50%; margin-top: 10;">
+                    <div class="card-body">
+                      <h5 class="card-title">Kanban Board Application</h5>
+                      <p class="card-text">Currently under progress!</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; margin-top: 10;">
+                    <img src="pictures/email.jpg" class="card-img-top" style="width: 75%; height: 25%; margin-top: 10;">
+                    <div class="card-body">
+                      <h5 class="card-title">Memo Mailing Application</h5>
+                      <p class="card-text">A Quick, Easy and Reliable way to send memos from one app to all your employees!</p>
+                      <a href="https://github.com/adityarags/MemoIt-Memo-Mailing-application" class="btn btn-primary"><i class="fa fa-github"></i> Repository</a>
+                    </div>
+                  </div>
+              </div>
+            
+
+            <div class="carousel-item">
+                <div class="card" style="width: 100%; margin-top: 10;">
+                    <img src="pictures/userauth.jpg" class="card-img-top" style="width: 100%; height: 50%; margin-top: 10;">
+                    <div class="card-body">
+                      <h5 class="card-title">ML User Authenticator App</h5>
+                      <p class="card-text">Uses face recognition and handwritten digit recognition to authorize users to use an app.</p>
+                      <a href="https://github.com/adityarags/App-Lock-using-ML" class="btn btn-primary"><i class="fa fa-github"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-  
-          <div class="shadow one"></div>
-          <div class="shadow two"></div>
-      </div>
-  
-        <div class="links">
-          <ul>
-            <li>
-              <a href="index.html" style="--i: 0.05s;">About Me</a>
-            </li>
-            <li>
-              <a href="education.html" style="--i: 0.1s;">Education</a>
-            </li>
-            <li>
-              <a href="experience.html" style="--i: 0.15s;">Experience</a>
-            </li>
-            <li>
-              <a href="projects.html" style="--i: 0.2s;">Projects</a>
-            </li>
-            <li>
-              <a href="cardstest.html" style="--i: 0.25s;">Contact Me!</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  
-      <script src="app.js"></script>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
